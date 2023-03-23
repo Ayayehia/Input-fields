@@ -1,0 +1,194 @@
+body {
+  background-color: hsl(0, 100%, 74%);
+  background-image: url(./bg-intro-desktop.png);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+:root{
+ --error-color:Var(red);
+ --correct-color:Var(green);
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
+}
+.section-one {
+  grid-column: 1/5;
+  grid-row: 3/5;
+  padding: 90px;
+}
+.title h1 {
+  font-family: "Jomhuria", cursive;
+  font-family: "Poppins", sans-serif;
+  font-size: xx-large;
+  line-height: 33px;
+}
+.title {
+  color: white;
+}
+.section-two {
+  grid-column: 6/10;
+  grid-row: 3/5;
+}
+
+.form .form-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+  background-color: whitesmoke;
+  padding: 70px;
+  border-color: aliceblue;
+  border-radius: 5px;
+  box-shadow: 0px 25px rgba(102, 101, 101, 0.4);
+}
+input {
+  padding: 10px;
+  margin: 5px;
+  width: 280px;
+  height: 10px;
+  border: solid 0.5px grey;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+
+.btn-form {
+  background-color: hsl(154, 59%, 51%);
+  width: 280px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px rgb(128 128 128 / 20%);
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.btn-text {
+  color: rgb(128 128 128 / 60%);
+  font-size: x-small;
+}
+.btn-text span {
+  color: hsl(0, 100%, 74%);
+}
+.btn-form-top {
+  background-color: hsl(248, 32%, 49%);
+  width: 370px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px rgba(102, 101, 101, 0.4);
+  cursor: pointer;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btn-form-top p {
+  font-size: small;
+}
+.btn-form-top span {
+  font-size: smaller;
+}
+@media screen and (max-width:667px) {
+  body {
+    background-color: hsl(0, 100%, 74%);
+    background-image: url(./bg-intro-mobile.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  .form .form-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 200px;
+    background-color: whitesmoke;
+    padding: 50px;
+    border-color: aliceblue;
+    border-radius: 5px;
+    box-shadow: 0px 6px rgba(102, 101, 101, 0.4);
+  }
+  input {
+    padding: 5px;
+    margin: 5px;
+    width: 180px;
+    height: 5px;
+    border: solid 0.5px grey;
+    background-color: whitesmoke;
+    border-radius: 5px;
+  }
+  .inputvalidation input{padding: 5px;
+    margin: 5px;
+    width: 180px;
+    height: 5px;
+    border: solid 0.5px rgb(230, 65, 65);
+    background-color: whitesmoke;
+    border-radius: 5px;
+
+  }
+  .btn-form {
+    background-color: hsl(154, 59%, 51%);
+    width: 180px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 2px rgb(128 128 128 / 20%);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .btn-form-top {
+    background-color: hsl(248, 32%, 49%);
+    width: 240px;
+    height: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 5px rgba(102, 101, 101, 0.4);
+    cursor: pointer;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center3
+   margin-bottom: 20px;
+  }
+  .container {
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-template-rows: repeat(10, 10%);
+  }
+  .section-two {
+    grid-column: 1/10;
+    grid-row: 7/10;
+    padding-left: 55px;
+  }
+  .section-one {
+    grid-column: 1/10;
+    grid-row: 1/4;
+     padding: 49px;
+  }
+  .form-control.error { border-color:var(--error-color) ;
+
+}
+.form-control.true {
+  border-color:var(--correct-color) ;
+}
+.form-control small{
+visibility: hidden;
+color: red;
+
+}
+.form-control small .error{   visibility:visible;
+  color: red;
+
+}
